@@ -1,17 +1,21 @@
-<div class="container__smal-card">
+<div class="container__small-card">
+
+  <div class="container__small-card-content">
     <div class="small-card__photo">
-      <img src="https://png.pngtree.com/png-vector/20210604/ourmid/pngtree-gray-network-placeholder-png-image_3416659.jpg" alt="imagem" height="200px" width="150px">
+      <img
+        src="{{ photoCover }}"
+        alt=""
+        srcset=""
+      >
     </div>
+
     <div class="small-card__title">
-      <h1> Primeira notícia </h1>
+      <h1><a [routerLink]="['content', Id]" >{{ cardTitle }}</a></h1>
     </div>
-    <div class="small-card__description">
-      <p> descrição </p>
-    </div>
-    <div class="container__smal-card-separator">
-      <hr>
-    </div>
+  </div>
+
+  <div class="container__small-card__separator">
+    <hr>
+  </div>
 
 </div>
-
-

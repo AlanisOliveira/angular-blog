@@ -1,0 +1,23 @@
+.container__menu-bar > ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  list-style: none;
+}
+
+.container__menu-bar > ul > li {
+  margin-right: 20px;
+}
+
+.container__menu-bar > ul > li:last-child {
+  margin-right: 0; /* Remove a margem direita do último item */
+}
+
+.container__menu-bar > ul > li > a {
+  text-decoration: none;
+  color: #333; /* Cor do texto do link */
+}
+
+.container__menu-bar > ul > li > span {
+  color: #333; /* Cor do separador (ponto) */
+}
